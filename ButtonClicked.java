@@ -16,9 +16,20 @@ import javax.swing.JTextArea;
  * @author 100514985
  */
 public class ButtonClicked implements ActionListener{
+    private JPanel all;
+    private JPanel spNotArea;
+    private JButton toggleSpeed;
+    private JPanel alLiMaArea;
+    private JTextArea alerts;
+    private JButton maxAlerts;
+    private JTextArea licensePlate;
+    private JTextArea licenseData;
+    private JPanel map;
+    //Toggle minimize Speed
     ButtonClicked(){
         
     }
+    //Toggle maximize alerts
     ButtonClicked(JPanel jp, JButton jb, JPanel jpmap, JTextArea jtAlert, JTextArea jtLicensePt, JTextArea jtLicense){
         
     }
