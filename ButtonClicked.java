@@ -21,19 +21,19 @@ public class ButtonClicked implements ActionListener{
     private JButton toggleSpeed;
     private JPanel alLiMaArea;
     private JTextArea alerts;
-    private JButton maxAlerts;
+    private JButton minMap;
     private JTextArea licensePlate;
     private JTextArea licenseData;
     private JPanel map;
     
     private boolean speedIsMin = false;
     private boolean mapIsMin= false;
-    //Toggle minimize Speed
-    ButtonClicked(JPanel all, JPanel spd, JPanel alertPanel){
+    //Toggle minimize Speed params
+    ButtonClicked(JPanel all, JButton toggleSpeed, JPanel alLiMaArea, JTextArea alerts, JButton minMap, JTextArea licensePlate, JPanel map){
         
     }
-    //Toggle maximize alerts
-    ButtonClicked(JPanel area, JButton jb, JPanel jpmap, JTextArea jtAlert, JTextArea jtLicensePt, JTextArea jtLicense){
+    //Toggle maximize alerts params
+    ButtonClicked(JPanel area, JButton minMap, JPanel jpmap, JTextArea jtAlert, JTextArea jtLicensePt, JTextArea jtLicense){
         
     }
     
