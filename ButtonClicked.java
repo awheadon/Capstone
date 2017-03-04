@@ -18,7 +18,7 @@ import javax.swing.JTextArea;
 public class ButtonClicked implements ActionListener{
     private JPanel all;
     private JPanel spNotArea;
-    private JButton toggleSpeed;
+    private JButton minSpeed;
     private JPanel alLiMaArea;
     private JTextArea alerts;
     private JButton minMap;
@@ -29,12 +29,24 @@ public class ButtonClicked implements ActionListener{
     private boolean speedIsMin = false;
     private boolean mapIsMin= false;
     //Toggle minimize Speed params
-    ButtonClicked(JPanel all, JButton toggleSpeed, JPanel alLiMaArea, JTextArea alerts, JButton minMap, JTextArea licensePlate, JPanel map){
-        
+    ButtonClicked(JPanel all, JButton minSpeed, JPanel alLiMaArea, JTextArea alerts, JButton minMap, JTextArea licensePlate, JTextArea licenseData, JPanel map){
+        this.all = all;
+        this.minSpeed = minSpeed;
+        this.alLiMaArea = alLiMaArea;
+        this.alerts = alerts;
+        this.minMap = minMap;
+        this.licensePlate = licensePlate;
+        this.licenseData = licenseData;
+        this.map = map
     }
     //Toggle maximize alerts params
-    ButtonClicked(JPanel area, JButton minMap, JPanel jpmap, JTextArea jtAlert, JTextArea jtLicensePt, JTextArea jtLicense){
-        
+    ButtonClicked(JPanel alLiMaArea, JButton minMap, JPanel map, JTextArea alerts, JTextArea jtLicensePt, JTextArea jtLicense){
+        this.alLiMaArea = alLiMaArea;
+        this.minMap = minMap;
+        this.map = map;
+        this.alerts = alerts;
+        this.licensePlate = licensePlate;
+        this.licenseData = licenseData;
     }
     
     @Override
