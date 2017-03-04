@@ -25,12 +25,15 @@ public class ButtonClicked implements ActionListener{
     private JTextArea licensePlate;
     private JTextArea licenseData;
     private JPanel map;
+    
+    private boolean speedIsMin = false;
+    private boolean mapIsMin= false;
     //Toggle minimize Speed
-    ButtonClicked(){
+    ButtonClicked(JPanel all, JPanel spd, JPanel alertPanel){
         
     }
     //Toggle maximize alerts
-    ButtonClicked(JPanel jp, JButton jb, JPanel jpmap, JTextArea jtAlert, JTextArea jtLicensePt, JTextArea jtLicense){
+    ButtonClicked(JPanel area, JButton jb, JPanel jpmap, JTextArea jtAlert, JTextArea jtLicensePt, JTextArea jtLicense){
         
     }
     
